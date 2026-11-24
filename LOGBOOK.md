@@ -774,9 +774,9 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 | | |
 |---|---|
-| **Autor do CRUD revisado** | _nome_ |
-| **Repositório revisado** | _link_ |
-| **Revisor** | _seu nome_ |
+| **Autor do CRUD revisado** | Heitor França Barboza |
+| **Repositório revisado** | https://github.com/heitorbarboza08/crud-e-logbook-rondinelli.git |
+| **Revisor** | Felipe Couto Lamar |
 | **Unidade curricular / Semestre** | Algoritmos e Programação · 2026.2 |
 | **Ciclo / data** | _Ciclo 09 · 21/10_ |
 
