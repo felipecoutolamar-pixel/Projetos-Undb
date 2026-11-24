@@ -556,8 +556,8 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 | | |
 |---|---|
-| **Nome do estudante** | _…_ |
-| **Data de realização** | _…_ |
+| **Nome do estudante** | Felipe Couto Lamar |
+| **Data de realização** | 24/11 |
 | **Unidade curricular** | Algoritmos e Programação |
 | **Professor(a)** | Rondineli Seba Salomão |
 
@@ -601,13 +601,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 *AV Qualis — Grupo 2 | Sábado 21/11, 23h59*
 
 **3a. O que descobri que mudou minha compreensão do problema (mínimo 2 achados, com objeto de conhecimento associado):**
-1. _…_ — *Objeto de conhecimento:* _…_
-2. _…_ — *Objeto de conhecimento:* _…_
-3. _…_ *(opcional)*
+1. Dependência entre cadastros e pedidos: Descobri que os pedidos dependem diretamente dos registros de clientes e lojas para representar corretamente uma compra, entretanto, o sistema permite remover um cliente mesmo quando existem pedidos vinculados a ele, fazendo com que os registros percam a referência ao cadastro original. 
+2. Controle de transições dos pedidos: Descobri que a alteração de status permite acompanhar o andamento das compras, mas o sistema não estabelece restrições sobre a sequência dessas mudanças, a função "alterar_status()" permite selecionar diretamente qualquer uma das opções disponíveis, sem verificar se a transição faz sentido para a etapa atual do pedido.
+3. Limitação na entrada de informações: Descobri que utilizar "input()" e converter os valores diretamente com "int()" e "float()" não garante que os dados informados sejam válidos, entradas incorretas, como letras em campos numéricos ou valores negativos para pedidos, podem provocar erros ou registros inadequados. 
 
 **3b. Desvio em relação ao Campo 02 (ao menos 1 — causa técnica):**
-- **Desvio:** _…_
-- **Causa técnica:** _…_
+- Desvio: Durante a execução, identifiquei que a remoção de clientes não considera a existência de pedidos vinculados ao cadastro excluído, permitindo que informações relacionadas permaneçam no sistema sem uma referência válida.
+- A função "remover_cliente()" utiliza "clientes.remove(cliente)" para excluir diretamente o objeto da lista, sem consultar previamente a lista "pedidos" para verificar se existem registros associados ao identificador daquele cliente.
 
 **3c. Decisão de ajuste (ao menos 1) com justificativa e fonte:**
 - **Decisão:** _…_
