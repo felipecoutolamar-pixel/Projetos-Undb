@@ -610,31 +610,31 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 - A função "remover_cliente()" utiliza "clientes.remove(cliente)" para excluir diretamente o objeto da lista, sem consultar previamente a lista "pedidos" para verificar se existem registros associados ao identificador daquele cliente.
 
 **3c. Decisão de ajuste (ao menos 1) com justificativa e fonte:**
-- **Decisão:** _…_
-- **Fonte:** _…_
+- Decisão: Modificar a função "remover_cliente()" para realizar uma verificação prévia na lista de pedidos, identificando se existem compras associadas ao cliente antes de permitir sua exclusão, caso existam dependências, o sistema deverá impedir a remoção até que seja definido um tratamento adequado para os pedidos relacionados.
+- Fonte: A decisão foi baseada na análise do funcionamento das listas "clientes" e "pedidos" e das operações realizadas pela função "remover_cliente()", buscando evitar referências inválidas e preservar a consistência dos registros.
 
-**Objeto de conhecimento mobilizado nesta decisão:** _…_
+- Objeto de conhecimento mobilizado nesta decisão: Integridade referencial, estruturas condicionais, estruturas de repetição e relacionamento entre entidades.
 
 ### 🧩 CAMPO 04 — Interação com IA
 *AV Qualis — Grupo 2 | Sábado 21/11, 23h59 | OBRIGATÓRIO*
 
 > **Obrigatório e avaliado. Print sem análise crítica = devolução imediata. Reproduzir a IA sem questionamento = reprovado.**
 
-**4a. Ferramenta:** _…_  **Data:** _DD/MM/AAAA_
+4a. Ferramenta: CHATGPT(OpenAI)   Data: 24/11/2026
 
-**4b. Pergunta formulada (transcrita integralmente):**
-
-> _…_
-
-**4c. Resposta da IA (resumida em parágrafo):**
+4b. Pergunta formulada (transcrita integralmente): Considerando o desenvolvimento do meu CRUD em Python, como posso identificar limitações técnicas no código, compreender os problemas relacionados ao cadastro, consulta, atualização e exclusão de informações e propor melhorias que garantam maior organização e consistência dos dados?
 
 > _…_
 
-**4d. O que aceitei — com referência ao objeto de conhecimento do componente:**
+4c. Resposta da IA (resumida em parágrafo): A IA analisou a estrutura do sistema e identificou possíveis limitações na geração de identificadores, no relacionamento entre clientes, lojas e pedidos e na validação das informações inseridas, também explicou a utilização de estruturas como dataclass, listas, funções, Enum e operações CRUD. Como sugestões de melhoria, apresentou verificações para impedir pedidos associados a registros inexistentes, cuidados antes da exclusão de clientes vinculados a pedidos e alternativas para melhorar o armazenamento e a identificação dos registros.
 
 > _…_
 
-**4e. O que questionei ou descartei — com argumento técnico ou fonte:**
+4d. O que aceitei — com referência ao objeto de conhecimento do componente: Aceitei a análise sobre a necessidade de validar os relacionamentos entre clientes, lojas e pedidos antes de realizar um cadastro, essa orientação demonstrou que utilizar identificadores para relacionar objetos não garante automaticamente a existência dos registros associados. Também considerei relevante a utilização de estruturas condicionais e da função "buscar()" para verificar os dados antes de criar um pedido.
+
+> _…_
+
+4e. O que questionei ou descartei — com argumento técnico ou fonte: Questionei a utilização de soluções sugeridas sem considerar todas as condições de funcionamento do sistema, por exemplo, alterar a função "novo_id()" para utilizar apenas o maior identificador existente não garante a preservação de todo o histórico de IDs caso todos os registros sejam excluídos, também considerei que implementar novas funcionalidades sem verificar sua relação com os requisitos do projeto poderia aumentar desnecessariamente a complexidade do CRUD. Por isso, priorizei melhorias diretamente relacionadas aos problemas identificados no código. 
 
 > _…_
 
