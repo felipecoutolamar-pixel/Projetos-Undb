@@ -784,11 +784,11 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 | ETAPA DO PROCESSO | RESPONSÁVEL | PRAZO | STATUS | DESVIO / JUSTIFICATIVA |
 |---|---|---|---|---|
-| 1. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 2. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 3. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 4. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 5. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
+| 1. Clonagem e execução local do repositório do colega | Felipe Couto Lamar / Heitor França Barboza | _DD/MM_ | ☑  Concluída ☐ Em andamento ☐ Com desvio | Repositório clonado e o código foi executado em Python 3.12, sem dependências externas |
+| 2.  Execução do fluxo básico CRUD (Create, Read, Update, Delete) | Felipe Couto Lamar / Heitor França Barboza | _DD/MM_ | ☐ Concluída ☐ Em andamento ☑ Com desvio | As operações principais funcionaram, mas ocorreu uma falha ao excluir registro inexistente |
+| 3. Teste de integridade referencial e geração de chaves (IDs) | Felipe Couto Lamar / Heitor França Barboza | _DD/MM_ | ☐  Concluída ☐ Em andamento ☑ Com desvio | A exclusão seguida de um novo cadastro gerou colisão de ID devido ao uso de len() + 1 |
+| 4. Leitura estrutural do código-fonte e mapeamento de objetos de conhecimento | Felipe Couto Lamar / Heitor França Barboza | _DD/MM_ | ☑  Concluída ☐ Em andamento ☐ Com desvio | Classes, funções, listas e dicionários foram identificados e analisados |
+| 5. Registro de achados e devolução de feedback técnico ao auto | Revisor / Autor | _DD/MM_ | ☑  Concluída ☐ Em andamento ☐ Com desvio | Problemas foram encontrados e documentados, com sugestões de correção encaminhadas ao autor |
 
 **5b. ANÁLISE DE INSUMOS E CRITÉRIOS DE QUALIDADE:**
 
