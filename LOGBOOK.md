@@ -852,13 +852,15 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 11 — 04/11
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Desenvolver um CRUD de pedidos capaz de organizar clientes, lojas e pedidos, permitindo cadastrar, listar, remover e atualizar informações.
+2. **O que implementei (commits / arquivos / links):** Implementei as estruturas Cliente:, Loja: e Pedido. As variáveis: clientes, lojas e pedidos. A Implementação do CRUD de pedidos incluindo cadastro, listagem, remoção de clientes, criação de pedidos e alteração de status e resumo [Ver meu CRUD](https://github.com/felipecoutolamar-pixel/Projetos-Undb/blob/main/codedare.py)
+3. **Objeto(s) de conhecimento mobilizado(s):** Programação orientada a objetos, dataclass, Enum, listas, funções, estruturas condicionais, laços de repetição, map(), lambda e list comprehension.
+4. **Desvio ou erro encontrado + causa técnica:** Identifiquei que o sistema permite criar pedidos com IDs de clientes ou lojas inexistentes, pois ainda não possui validação completa da integridade referencial.
+5. **Decisão de ajuste + fonte:** Decidi que a criação de pedidos deve validar a existência do cliente e da loja antes de salvar os dados, utilizando a função buscar() e as listas cadastradas.
+
+Fonte: Python Documentation – More on Lists(https://docs.python.org/3/tutorial/datastructures.html?utm_source=chatgpt.com#more-on-lists) e MENEZES, Nilo Ney Coutinho. Introdução à Programação com Python: Algoritmos e Lógica de Programação para Iniciantes. Novatec, Capítulo 7 – Listas.
+6. **Feedback recebido e o que mudei:** A partir da análise do código e dos critérios de avaliação, percebi a necessidade de melhorar as validações e a organização das operações para tornar o sistema mais confiável.
+7. **Próximo passo:** Implementar validações de IDs, valores e entradas inválidas, além de testar a integridade referencial e documentar as melhorias realizadas.
 
 ### 🧩 CAMPO 06 — Próximos passos para a defesa
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
