@@ -793,28 +793,28 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 **5b. ANÁLISE DE INSUMOS E CRITÉRIOS DE QUALIDADE:**
 
 | RECURSO | QTDE PLANEJADA | QTDE UTILIZADA | VARIAÇÃO | JUSTIFICATIVA TÉCNICA |
-|---|---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
+| Python | 1 | 1 | 0 | Linguagem utilizada no desenvolvimento |
+| Dataclasses | 3 | 3 | 0 | Estruturação de Cliente, Loja e Pedido |
+| Enum | 1 | 1 | 0 | Padronização dos status dos pedidos |
+| Listas | 3 | 3 | 0 | Armazenamento dos dados em memória |
 
 **5c. CONTROLE DE QUALIDADE:**
-- **Critério ou norma técnica:** _…_
-- **A solução atende?** ☐ Sim ☐ Parcialmente ☐ Não
+- **Critério ou norma técnica:** Organização modular, uso de estruturas de dados, identificação única dos registros e consistência entre clientes, lojas e pedidos.
+- **A solução atende?** ☐ Sim ☑ Parcialmente ☐ Não
 
 **5d. GESTÃO DE RISCOS:**
-- **Risco:** _…_
-- **Estratégia de mitigação:** _…_
-
-**5e. RASTREABILIDADE DAS DECISÕES TÉCNICAS — COM VÍNCULO AO CONTEÚDO:**
+- **Risco:** Perda dos dados ao encerrar o programa, cadastro de pedidos com clientes ou lojas inexistentes e inconsistência nos identificadores após remoções.
+- **Estratégia de mitigação:** Implementar persistência em banco de dados, validação dos IDs antes de criar pedidos e geração de identificadores únicos e impedir a exclusão de clientes vinculados a pedidos existentes.
+-
+- **5e. RASTREABILIDADE DAS DECISÕES TÉCNICAS — COM VÍNCULO AO CONTEÚDO:**
 
 | DATA | DECISÃO TÉCNICA | RESP. | OBJETO DE CONHECIMENTO MOBILIZADO | FUNDAMENTAÇÃO / REFERÊNCIA |
 |---|---|---|---|---|
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
+| 25/11/26 | Utilizar dataclasses para representar entidades | Desenvolvedor | Classes e Objetos | Organização dos dados de Cliente, Loja e Pedido |
+| 25/11/26 | Utilizar Enum para os status | Desenvolvedor | Enumerações | Padronização dos estados dos pedidos |
+| 25/11/26 | Modularizar o CRUD em funções | Desenvolvedor | Funções e Modularização | Separação das operações e reutilização de código |
+| 25/11/26 | Utilizar listas para armazenar registros | Desenvolvedor | Listas e estruturas de dados | Armazenamento e consulta dos dados em memória |
+| 25/11/26 | Implementar resumo com map e list comprehension | Desenvolvedor | Programação funcional | Filtragem de pedidos entregues e cálculo dos valores |
 
 > **IMPORTANTE:** Decisão registrada sem objeto de conhecimento associado e sem referência é considerada **não rastreável** e não conta para a avaliação formativa. O vínculo entre processo e conteúdo é obrigatório em todas as decisões relevantes.
 
