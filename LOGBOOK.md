@@ -867,22 +867,25 @@ Fonte: Python Documentation – More on Lists(https://docs.python.org/3/tutorial
 
 **6a. Decisão técnica que defendo com plena autonomia — o que aprendi que é exclusivamente meu e não consigo transferir para nenhum colega:**
 
-> _…_
+O que é exclusivamente meu é a compreensão de como as estruturas Cliente, Loja e Pedido se relacionam e como a função buscar() permite localizar registros pelo ID. Eu consigo explicar essa lógica, justificar sua utilização e identificar como ela pode ser melhorada para evitar pedidos com referências inválidas, essa compreensão veio da minha análise e execução do código, e não apenas da reprodução de uma solução pronta.
 
 **6b. Lacuna técnica e plano de ação para saná-la:**
 
-- **Lacuna:** _…_
-- **Plano de ação (passos e datas):** _…_
+- **Lacuna:** Uma lacuna do meu CRUD é a falta de validação dos IDs de cliente e loja ao criar um pedido, meu plano é utilizar a função buscar() para verificar se os registros existem antes de cadastrar o pedido, evitando referências inválidas.
+- **Plano de ação (passos e datas):** - 18/10: Revisar as estruturas Cliente, Loja e Pedido, compreendendo como os objetos se relacionam.
+- 28/10: Testar a função buscar() e identificar possíveis falhas na consulta de registros.
+- 2/11: Implementar a validação dos IDs de cliente e loja antes da criação de pedidos.
+- 10/11: Executar testes do CRUD, verificar os resultados e preparar a explicação técnica para a defesa.
 
 **6c. Pergunta que a banca pode fazer — com resposta fundamentada (mínimo 5 linhas):**
 
-- **Pergunta:** _…_
-- **Resposta:**
+- **Pergunta:** Por que você utilizou Enum para os status dos pedidos?
+- **Resposta:** Utilizei Enum para padronizar os possíveis status dos pedidos, como criado, em preparação, em entrega, entregue e cancelado. Isso facilita a organização e evita inconsistências na atualização dos pedidos.
 
 > _…_
 
-**Objeto de conhecimento mobilizado:** _…_
-**Fonte:** _…_
+**Objeto de conhecimento mobilizado:** Estruturas de dados, classes, objetos, listas e funções de busca em Python.
+**Fonte:** MENEZES, Nilo Ney Coutinho. Introdução à Programação com Python: Algoritmos e Lógica de Programação para Iniciantes. Novatec.
 
 ## 🔵 CICLO 12 — 11/11 — Refatoração e qualidade de código
 
