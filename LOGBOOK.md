@@ -963,14 +963,14 @@ O que é exclusivamente meu é a compreensão de como as estruturas Cliente, Loj
 
 **7a. O que eu pensava no início do ciclo (com base no Campo 01 — registrar a hipótese inicial e os objetos de conhecimento que achava conhecer):**
 
-> _…_
+No início, eu entendia que um CRUD consistia principalmente em cadastrar, listar, atualizar e remover dados. Acreditava que, se as funcionalidades executassem corretamente, o sistema já estaria suficientemente organizado.
 
 **7b. O que aprendi — conceitos, princípios ou relações técnicas que não dominava no início e que agora consigo explicar com precisão (mínimo 3 objetos de conhecimento):**
 
 | OBJETO DE CONHECIMENTO | O QUE EU NÃO DOMINAVA | O QUE APRENDI E CONSIGO DEMONSTRAR | EVIDÊNCIA (campo do Logbook onde aparece) |
-|---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ |
+| dataclass|Como organizar dados em objetos | Estruturar Cliente, Loja e Pedido |Campo 2|
+| Integridade referencial | A importância de validar IDs relacionados | Identificar referências inválidas entre pedidos, clientes e lojas | Campo 4 |
+| List comprehension | Como filtrar registros de forma concisa | Filtrar pedidos entregues no relatório | Campo 02 |
 | _…_ | _…_ | _…_ | _…_ |
 
 **7c. Conceitos que precisei corrigir ao longo do ciclo — onde eu estava equivocado e o que o corrigiu (Fechamento Teórico, pesquisa, Peer Review, arguição):**
@@ -1048,14 +1048,14 @@ O que é exclusivamente meu é a compreensão de como as estruturas Cliente, Loj
 
 **OBSERVAÇÕES:** _…_
 
-**Professor(a):** _________________  **Data:** ___________
+**Professor(a):** Rondinelli Seba Salomão  **Data:** 26/11
 </details>
 
 ### Registro do Encerramento — 18/11
-1. **O que apresentei/defendi (em 1 frase):** _…_
-2. **Objeto(s) de conhecimento que a banca mais explorou:** _…_
-3. **Pergunta que mais me desafiou e como respondi:** _…_
-4. **O que levo deste semestre para o próximo módulo:** _…_
+1. **O que apresentei/defendi (em 1 frase):** Apresentei e defendi meu CRUD de pedidos, explicando sua estrutura, funcionalidades e os conhecimentos de Python utilizados no desenvolvimento.
+2. **Objeto(s) de conhecimento que a banca mais explorou:** Estruturas de dados com dataclass, organização de objetos, funções, listas, enumeração de status e operações CRUD.
+3. **Pergunta que mais me desafiou e como respondi:** A Banca não me realizou perguntas, pois entreguei a defesa em video.
+4. **O que levo deste semestre para o próximo módulo:** Levo o aprendizado sobre organização de código, criação e manipulação de objetos, além da importância de analisar criticamente uma implementação, reconhecer suas limitações e planejar melhorias técnicas.
 
 ---
 
